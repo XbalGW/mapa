@@ -305,7 +305,7 @@
             AllMarkersData.forEach((item) => {
                 var info = item;
                 var marker = L.marker([info.lat, info.lng], {
-                    draggable: false,
+                    draggable: true,
                     id: info.id,
                     group: info.group,
                     category: info.category,
@@ -323,7 +323,7 @@
             AllLocationsData.forEach((item) => {
                 var info = item;
                 var marker = L.marker([info.lat, info.lng], {
-                    draggable: false,
+                    draggable: true,
                     id: info.id,
                     icon: L.divIcon({ className: 'location-marker', html: '<div class="location-name">' + info.location + '</div>' }),
                     location: info.location
